@@ -5,14 +5,13 @@ Serve `transformers` language models using `litestar`. Mimicks `openai.create` A
 ## Install
 
 ```bash
-poetry use <python-path>
-poetry install
+pip install git+https://github.com/vlievin/serve-lm.git
 ```
 
 ## Run the API
 
 ```bash
-poetry run api --model=databricks/dolly-v1-6b --device=cpu
+python -m serve_lm.api --model=databricks/dolly-v1-6b --device=cpu
 ```
 
 ### Call the API
